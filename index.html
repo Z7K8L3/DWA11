@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tally Counter</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?
+    family=REM:ital,wght@0,600;1,500&display=swap" 
+    rel="stylesheet">
+
+    <!-- Load the JavaScript and runs it. This does not need to be 
+        called "script.js", but it is common to name it "script" or 
+        "scripts". The defer attribute tell the browser to load the 
+        HTML first before running the JavaScript. -->
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">
+            Tally Count
+        </h1>
+    </header>
+    
+    
+    <main class="counter">
+        <noscript>
+            <p class="error">This web app requires JavaScript to work.</p>
+        </noscript>
+            
+        <input class="counter__value" data-key="number" readonly 
+            value="0"/>
+            
+            <div class="counter__actions">
+                <button data-key="subtract" class="counter__button
+                counter__button_first">-</button>
+                <button data-key="add" class="counter__button">+</button>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            Inspired by 
+            <a class="footer__link" href="https://tallycount.app/">
+            Tally Count</a>. 
+            Note that this is merely a practice 
+            project for learning JavaScript.
+        </footer>
+    </body>
+</html>
